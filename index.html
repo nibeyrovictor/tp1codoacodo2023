@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- SEO Meta Tags -->
+    <meta name="keywords" content="php, curso, codoacodo, codo a codo">
+<!-- Autor Meta Tags -->        
+		<meta name="author" content="Víctor Alberto Nibeyro">
+<!-- Icono de la pestaña tambien si se modifica ver en <a class="navbar-brand" href="#"><img src=... -->         
+        <link rel="shortcut icon" type="image/x-icon" href="./images/codoacodo.png"> 
+    <!-- Vista determinada  necesaria para bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="./styles/v5.3.0-alpha3/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <!-- Renovación de cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <title>Codo a codo </title>
+</head>
+
+<body>
+<!--Barra de navegación-->
+<header class="fixed-top">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mx-auto px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo" src="images/codoacodo.png" alt="" width="50" height="44">
+                <span class="titulo ml-2">Conf Bs As</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success font-weight-bold font-compra" href=#>Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>    
+
+<!--1er imagen principal -->      
+    <main class="mt-5"> <!--dicha clase se agrego para evitar que se encime el menu de navegacion en el main -->
+        <h1>Conf Bs As</h1>
+        <p>La conferencia en Buenos Aires se centrará en temas actuales e importantes para el ámbito empresarial y tecnológico. Se abordarán tendencias emergentes en el mundo digital, así como enfoques innovadores para abordar los desafíos actuales del mercado. </p>
+        <div class="botones">
+            <button class="boton1">Quiero ser orador</button>
+            <button class="boton2">Comprar tickets</button>
+        </div>
+    </main>
+
+<!--Oradores en 3 columnas -->   
+    <section>
+        <h2 class="text-center"><span class="smaller-text">CONOCE A LOS </span> <br>ORADORES</h2>
+        <div class="cajas">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card h-100">
+                      <img src="./images/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                      <div class="card-body">
+                        <div>
+                            <button type="button" class="btn btn-warning"><p class="mb-0">JavaScript</p></button>
+                            <button type="button" class="btn btn-info"><p class="mb-0">React</p></button>
+                        </div>
+                        <h3>Steve jobs</h3>
+                        <p class="texto">Steve Jobs (1955-2011) fue un empresario y diseñador estadounidense, cofundador y CEO de Apple Inc. También fue cofundador de Pixar Animation Studios y NeXT Inc. Fue considerado un visionario en la industria de la tecnología y la informática, y es reconocido por su papel en la revolución de la computadora personal y el desarrollo de dispositivos como el iPod, iPhone y iPad. Jobs también fue conocido por su estilo de liderazgo altamente exigente y su enfoque en la experiencia del usuario y el diseño de productos. Murió a los 56 años después de una larga lucha contra el cáncer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100">
+                      <img src="./images/bill.jpg" class="card-img-top" alt="Bill Gates">
+                      <div class="card-body">
+                        <div>
+                            <button type="button" class="btn btn-warning"><p class="mb-0">JavaScript</p></button>
+                            <button type="button" class="btn btn-info"><p class="mb-0">React</p></button>
+                        </div>
+                        <h3>Bill Gates</h3>
+                        <p class="texto">Bill Gates es un empresario, inversor y filántropo estadounidense, co-fundador de Microsoft Corporation, la empresa que creó el sistema operativo Windows, que domina el mercado de las computadoras personales. Gates es considerado una de las personas más influyentes del mundo en la tecnología y la informática, y ha sido un defensor de la educación y la salud global, a través de la fundación que dirige junto a su esposa Melinda Gates. También ha sido reconocido como uno de los hombres más ricos del mundo, aunque ha donado gran parte de su fortuna a través de su fundación.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card h-100">
+                      <img src="./images/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                      <div class="card-body">
+                        <div>
+                            <button class="btn btn-secondary">
+                                <p class="mb-0">Negocios</p>
+                              </button>
+                              <button type="button" class="btn btn-danger text-center">
+                                <p class="m-0">Startups</p>
+                              </button>
+                              
+                        </div>
+                        <h3>Ada Lovelace</h3>
+                        <p class="texto-cajas">Ada Lovelace (1815-1852) fue una matemática y escritora británica conocida principalmente por su trabajo en el siglo XIX en la máquina analítica de Charles Babbage, un prototipo de computadora mecánica diseñado para ejecutar cálculos mediante tarjetas perforadas. Ada Lovelace escribió una serie de notas en las que detallaba el funcionamiento de esta máquina y cómo podía ser programada para realizar cálculos más complejos de lo que se había imaginado en ese momento. Debido a su trabajo pionero en la programación, Ada Lovelace es considerada como la primera programadora de la historia y una de las precursoras de la informática moderna. Además de su trabajo en las matemáticas y la computación, Ada Lovelace también fue una escritora prolífica y una defensora de la educación científica para las mujeres.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>  
+
+<!--2 columnas 1 de imagen, otra de texto -->   
+<section>
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-12 col-md-6">
+          <img src="./images/honolulu.jpg" alt="Descripción de la imagen" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-6 bg-secondary text-white">
+          <h3>Bs As - Octubre</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero optio deserunt atque debitis deleniti minima, neque fugit ab laborum tempora nesciunt iure officia nostrum architecto delectus quidem? Tempora, ducimus?</p>
+          <button class="boton1">Conocé Más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+              
+
+<!--Formulario -->            
+<section class="formulario py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="mb-4"><span class="smaller-text">CONVIÉRTETE EN UN</span> <br>ORADOR</h2>
+                <p>Anotate como orador para dar una <span style="border-bottom: 1px dotted;">charla ignite</span>. Cuentanos de que quieres hablar!</p>
+                <form action="" method="post">
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" name="Apellido" id="Apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" name="Comentario" id="Comentario" placeholder="Sobre que quieres hablar?">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <p class="text-start mb-0 text-muted">Recuerda incluir un título para tu charla</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="d-grid gap-2 col-md-12 text-center">
+                            <input class="btn btn-success btn-lg btn-block" type="button" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--Pie de página -->   
+<footer class="bg-dark py-3">
+    <div class="container">
+        <nav class="text-center">
+            <ul class="list-inline justify-content-center mb-0">
+                <li class="mx-3 text-white d-inline">Preguntas Frecuentes</li>
+                <li class="mx-3 text-white d-inline">Contáctanos</li>
+                <li class="mx-3 text-white d-inline">Prensa</li>
+                <li class="mx-3 text-white d-inline">Conferencias</li>
+                <li class="mx-3 text-white d-inline">Términos y condiciones</li>
+                <li class="mx-3 text-white d-inline">Privacidad</li>
+                <li class="mx-3 text-white d-inline">Estudiantes</li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+<!-- JavaScript para bootstrap 5.3 -->
+        <script src="./styles/v5.3.0-alpha3/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
