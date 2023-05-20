@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    
 <!-- codificación de caracteres utilizada en la página web -->
     <meta charset="UTF-8">
 <!-- indica al navegador web cómo debe interpretar la página web en términos de compatibilidad con versiones antiguas del navegador Internet Explorer -->
@@ -37,16 +38,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">La conferencia</a>
+                        <a class="nav-link" href="#conferencia">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link" href="#formulario">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-success font-weight-bold font-compra" href="compra_ticket.html">Comprar tickets</a>
@@ -58,7 +59,7 @@
 </header>    
 
 <!--1er imagen principal -->      
-<main class="mt-10 animate__animated animate__fadeIn animate__slow" style="background-image: url('./images/hawaii.jpg');">
+<main id="conferencia" class="mt-10 animate__animated animate__fadeIn animate__slow" style="background-image: url('./images/hawaii.jpg');">
     <h1>Conf Bs As</h1>
     <p>La conferencia en Buenos Aires se centrará en temas actuales e importantes para el ámbito empresarial y tecnológico. Se abordarán tendencias emergentes en el mundo digital, así como enfoques innovadores para abordar los desafíos actuales del mercado. </p>
     <div class="botones">
@@ -69,7 +70,7 @@
   
 
 <!--Oradores en 3 columnas -->   
-    <section  >
+    <section id="oradores"  class="mt-10 " >
         <h2 class="text-center"><span class="smaller-text">CONOCE A LOS </span> <br>ORADORES</h2>
         <div class="cajas">
             <div class="container">
@@ -123,7 +124,7 @@
     </section>  
 
 <!--2 columnas 1 de imagen, otra de texto -->   
-<section>
+<section id="lugaryfecha">
   <div class="container-fluid">
     <div class="row gx-3 gx-md-1">
       <div class="col-12 col-md-6 pt-1 pb-1">
@@ -142,7 +143,7 @@
              
 
 <!--Formulario -->            
-<section class="formulario py-5">
+<section id="formulario" class="formulario py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
