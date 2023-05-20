@@ -55,20 +55,144 @@
             </div>
         </div>
     </nav>
-</header>    
+</header >    
 
 <!--1er imagen principal -->      
 
 
 <!--Oradores en 3 columnas -->   
-    <section  >
-      
-</section>
 
-  
+    <div class="container mt-5 mt-lg-5 pt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="bg-white p-3 border border-primary">
+                    <div class="text-center">
+                        <h5>Estudiante</h5>
+                        <p>Tienen un descuento</p>
+                        <p>80%</p>
+                        <p>• presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bg-white p-3 border border-primary">
+                    <div class="text-center">
+                        <h5>Traine</h5>
+                        <p>Tienen un descuento</p>
+                        <p>50%</p>
+                        <p>• presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bg-white p-3 border-orange">
+                    <div class="text-center">
+                        <h5>Junior</h5>
+                        <p>Tienen un descuento</p>
+                        <p>15%</p>
+                        <p>• presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <section>
+    <h2 class="text-center"><span class="smaller-text">VENTA </span> <br>VALOR DEL TICKET $200</h2>
+
+</section>
              
 
 <!--Formulario -->            
+<section class="formulario py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <form action="" method="post">
+                <div class="row g-3 mt-4">
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" name="Apellido" id="Apellido" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="row g-3 mt-4">
+                    <div class="col-md-12">
+                        <input class="form-control" type="text" name="Comentario" id="Comentario" placeholder="Correo">
+                    </div>
+                </div>
+                <div class="row g-3 mt-4">
+                    <div class="col-md-6">
+                        <label for="Cantidad" class="form-label">Cantidad</label>
+                        <input class="form-control" type="text" name="Cantidad" id="Cantidad" placeholder="Cantidad">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Categoria" class="form-label">Categoría</label>
+                        <select class="form-select" name="Categoria" id="Categoria">
+                            <option value="" disabled selected>Seleccione una categoría</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="bg-info p-3 text-dark" id="totalAPagar" style="background-color: #cfe1f2;">
+                            Total a Pagar: $
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 text-md-end">
+                        <input class="btn btn-success btn-lg btn-block" type="reset" value="Borrar" onclick="borrarCampos()">
+                    </div>
+                    <div class="col-md-6 text-md-start mt-3 mt-md-0">
+                        <input class="btn btn-success btn-lg btn-block" type="button" value="Resumen" onclick="calcularTotal()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script>
+    function calcularTotal() {
+        var cantidad = parseInt(document.getElementById('Cantidad').value);
+        var categoria = document.getElementById('Categoria').value;
+        var descuento = 0;
+        
+        if (categoria === 'Estudiante') {
+            descuento = 0.8;
+        } else if (categoria === 'Trainee') {
+            descuento = 0.5;
+        } else if (categoria === 'Junior') {
+            descuento = 0.15;
+        }
+        
+        var total = cantidad * 200 * descuento; 
+        document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $' + total;
+    }
+    
+    function borrarCampos() {
+        document.getElementById('Nombre').value = '';
+        document.getElementById('Apellido').value = '';
+        document.getElementById('Comentario').value = '';
+        document.getElementById('Cantidad').value = '';
+        document.getElementById('Categoria').selectedIndex = 0;
+        document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $';
+    }
+</script>
+
+
+
+
+     
 
     
 <!--Pie de página -->   
