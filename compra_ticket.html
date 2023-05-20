@@ -165,6 +165,12 @@
     function calcularTotal() {
         var cantidad = parseInt(document.getElementById('Cantidad').value);
         var categoria = document.getElementById('Categoria').value;
+        
+        if (isNaN(cantidad) || cantidad <= 0 || categoria === '') {
+            alert('Por favor, ingrese una cantidad válida y seleccione una categoría.');
+            return;
+        }
+        
         var descuento = 0;
         
         if (categoria === 'Estudiante') {
@@ -188,6 +194,7 @@
         document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $';
     }
 </script>
+
 
 
 
