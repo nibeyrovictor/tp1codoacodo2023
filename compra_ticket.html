@@ -217,9 +217,19 @@ if (window.location.href.includes('compra_ticket.html')) {
 function toggleDarkMode() {
         // Obtener el elemento <body>
         var body = document.querySelector('body');
-        
+
+        // Obtener el elemento con el id "columnas_descuentos"
+        var columnasDescuentos = document.getElementById('columnas_descuentos');
+
         // Cambiar la clase CSS del elemento <body> para alternar entre los estilos claro y oscuro
         body.classList.toggle('dark-mode');
+
+        // Cambiar el fondo del elemento con el id "columnas_descuentos" según el modo oscuro
+        if (body.classList.contains('dark-mode')) {
+            columnasDescuentos.style.backgroundColor = '#000';
+        } else {
+            columnasDescuentos.style.backgroundColor = '';
+        }
     }
 
 </script>

@@ -77,7 +77,14 @@ main p {
 }
 
 
-body.dark-mode {
+/* Estilo para el modo oscuro */
+.dark-mode {
   background-color: #000;
   color: #fff;
+}
+
+/* Estilo para el fondo negro del elemento con id "columnas_descuentos" en modo oscuro */
+.dark-mode #columnas_descuentos {
+  background-color: #000 !important;
+  color: #080808;
 }
