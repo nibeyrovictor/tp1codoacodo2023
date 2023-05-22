@@ -139,7 +139,7 @@
                 <div class="row mt-4">
                     <div class="col-md-12">
                         <div class="bg-info p-3 text-dark" id="totalAPagar" style="background-color: #cfe1f2;">
-                            Total a Pagar: $
+                            Total a Pagar: $&nbsp;
                         </div>
                     </div>
                 </div>
@@ -182,15 +182,15 @@
         var descuento = 0;
         
         if (categoria === 'Estudiante') {
-            descuento = 0.8;
+            descuento = 0.2; // Descuento del 80% (100% - 80%)
         } else if (categoria === 'Trainee') {
             descuento = 0.5;
         } else if (categoria === 'Junior') {
-            descuento = 0.15;
+            descuento = 0.85;
         }
         
         var total = cantidad * 200 * descuento; 
-        document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $' + total;
+        document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $ ' + total;
     }
     
     function borrarCampos() {
@@ -199,7 +199,7 @@
     document.getElementById('mail').value = ''; 
     document.getElementById('Cantidad').value = '';
     document.getElementById('Categoria').selectedIndex = 0;
-    document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $';
+    document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $ ';
 }
 
 // Obtener el elemento del enlace "Comprar tickets"
