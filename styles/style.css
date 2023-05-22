@@ -75,3 +75,9 @@ main p {
 .nav-link.active1 {
   color: #fff; /* Cambia el color del texto a blanco */
 }
+
+
+body.dark-mode {
+  background-color: #000;
+  color !important: #fff;
+}
