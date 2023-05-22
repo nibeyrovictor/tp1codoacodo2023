@@ -65,3 +65,13 @@ main p {
   #lugaryfecha {
     padding-top: 70px;
   }
+
+
+  .nav-link.active {
+    color: #11ff31 !important;
+    font-weight: bold;
+}
+
+.nav-link.active1 {
+  color: #fff; /* Cambia el color del texto a blanco */
+}

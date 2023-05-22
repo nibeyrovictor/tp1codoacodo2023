@@ -40,16 +40,16 @@
                         <a class="nav-link" href="index.html">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="index.html#oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="index.html#lugaryfecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link" href="index.html#formulario">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success font-weight-bold font-compra" href="compra_ticket.html">Comprar tickets</a>
+                        <a class="nav-link text-success font-weight-bold font-compra" href="compra_ticket.html" id="comprarTickets">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
@@ -121,7 +121,7 @@
                 <div class="row g-3 mt-4">
                     <div class="col-md-6">
                         <label for="Cantidad" class="form-label">Cantidad</label>
-                        <input class="form-control" type="text" name="Cantidad" id="Cantidad" placeholder="Cantidad" onkeypress="return soloNumeros(event)">
+                        <input class="form-control" type="number" name="Cantidad" id="Cantidad" placeholder="Cantidad" onkeypress="return soloNumeros(event)">
                     </div>
                     <div class="col-md-6">
                         <label for="Categoria" class="form-label">Categoría</label>
@@ -191,13 +191,25 @@
     }
     
     function borrarCampos() {
-        document.getElementById('Nombre').value = '';
-        document.getElementById('Apellido').value = '';
-        document.getElementById('Comentario').value = '';
-        document.getElementById('Cantidad').value = '';
-        document.getElementById('Categoria').selectedIndex = 0;
-        document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $';
-    }
+    document.getElementById('Nombre').value = '';
+    document.getElementById('Apellido').value = '';
+    document.getElementById('mail').value = ''; 
+    document.getElementById('Cantidad').value = '';
+    document.getElementById('Categoria').selectedIndex = 0;
+    document.getElementById('totalAPagar').innerHTML = 'Total a Pagar: $';
+}
+
+// Obtener el elemento del enlace "Comprar tickets"
+var comprarTicketsLink = document.getElementById('comprarTickets');
+
+// Verificar si estamos en la página "Comprar tickets"
+if (window.location.href.includes('compra_ticket.html')) {
+    // Agregar la clase CSS para resaltar el menú
+    comprarTicketsLink.classList.add('active');
+} else {
+    // Quitar la clase CSS si no estamos en la página "Comprar tickets"
+    comprarTicketsLink.classList.remove('active');
+}
 
 </script>
 
