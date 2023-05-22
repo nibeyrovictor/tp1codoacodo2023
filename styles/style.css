@@ -67,7 +67,7 @@ main p {
   }
 
 
-  .nav-link.active {
+.nav-link.active {
     color: #11ff31 !important;
     font-weight: bold;
 }
@@ -79,5 +79,5 @@ main p {
 
 body.dark-mode {
   background-color: #000;
-  color !important: #fff;
+  color: #fff;
 }
